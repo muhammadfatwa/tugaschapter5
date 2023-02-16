@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="65dp"
+        android:gravity="center"
+        android:src="@drawable/tt_kgb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="36dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/rr_fonts"
+            android:text="@string/pemain"
+            android:textColor="#0397AC"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/com"
+            android:textStyle="bold"
+            android:fontFamily="@font/rr_fonts"
+            android:textColor="#0397AC"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+        android:layout_marginBottom="32dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/im_com_batu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/batu"
+            android:src="@drawable/ic_batu"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/im_player_batu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/batu"
+            android:src="@drawable/ic_batu"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/im_com_kertas"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/kertas"
+            android:src="@drawable/ic_kertas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:text="@string/vs"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/im_com_kertas"
+            app:layout_constraintStart_toEndOf="@+id/im_player_kertas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_player_kertas"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_kertas"
+            android:contentDescription="@string/kertas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp">
+
+        <ImageView
+            android:id="@+id/im_com_gunting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_gunting"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/gunting" />
+
+        <ImageView
+            android:id="@+id/im_player_gunting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_gunting"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/gunting"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/im_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_refresh"
+            android:padding="32dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KBG ( Kertas Batu Gunting )</string>
+    <string name="suit_game">Kertas Batu Gunting</string>
+    <string name="pemain">PLAYER</string>
+    <string name="com">COM</string>
+    <string name="pemain1">PLAYER 1</string>
+    <string name="pemain2">PLAYER 2</string>
+    <string name="batu">Batu</string>
+    <string name="gunting">Gunting</string>
+    <string name="vs">VS</string>
+    <string name="kertas">Kertas</string>
+    <string name="draw">DRAW</string>
+    <string name="playerwin">PLAYER WIN</string>
+    <string name="comwin">COM WIN</string>
+</resources>
